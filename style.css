@@ -6,29 +6,36 @@
 body {
     display: grid;
     grid-template: 
-    'header' 1fr
-    'main'6fr
-    'footer'1fr /
+    'header' auto
+    'main'350px
+    'footer'auto /
      auto;
 }
 header {
     background-color: antiquewhite;
     grid-area: header;
+    display: grid;
 }
 .header__items {
     display: grid;
     grid-auto-flow: column;
     padding: 1rem;
 }
+.header__description{
+    border: 1px solid black;
+    padding: 3rem;
+    background-color: pink;
+    
+}
 main{
     background-color: aquamarine;
     grid-area: main;
 }
-.description {
+.main__projects {
     display: grid;
-    grid-auto-flow: row;
-    padding: 1rem
-    ;
+    grid-auto-flow: column;
+    padding: 1rem;
+    place-items: center;
 }
 
 footer{
