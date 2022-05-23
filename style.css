@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template: 
+    'header' 1fr
+    'main'6fr
+    'footer'1fr /
+     auto;
+}
+header {
+    background-color: antiquewhite;
+    grid-area: header;
+}
+.header__items {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem;
+}
+main{
+    background-color: aquamarine;
+    grid-area: main;
+}
+.description {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 1rem
+    ;
+}
+
+footer{
+    background-color: rgb(192, 157, 211);
+    grid-area: footer
+    ;
+}
+ul {
+    list-style: none;
+}
