@@ -3,33 +3,55 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     display: grid;
     grid-template: 
-    'header' auto
-    'main'350px
+    'header' 500px
+    'main'200px
     'footer'auto /
      auto;
 }
 header {
-    background-color: antiquewhite;
+    
+    background-color: #f46d52;
     grid-area: header;
     display: grid;
+    place-items: center;
+    gap: 1rem;
+    
+
 }
 .header__items {
     display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+    padding: 0.5rem;
+    background-color: #35382e;
+    width: 90rem
+}
+header nav ul {
+    list-style: none;
+    display: grid;
     grid-auto-flow: column;
-    padding: 1rem;
+    justify-content: start;
+    gap: 1rem;
 }
 .header__description{
-    border: 1px solid black;
-    padding: 3rem;
-    background-color: pink;
-    
+    display: grid;
+    padding: 2rem;
+    width: 500px;
+    background-color: #35382e;
+    gap: 1rem;
+}
+.header__description h2{
+    color: #f2c702;
+}
+.header__description p {
+    color: white;
 }
 main{
-    background-color: aquamarine;
+    background-color: #ede6e2;
     grid-area: main;
 }
 .main__projects {
